@@ -4,6 +4,12 @@
 #include <vector>
 #include <cassert>
 
+// For generics in the following functions.
+enum Data_Type {
+    INT,
+    DOUBLE,
+    FLOAT
+};
 
 void build_matrix(float* matrix, int width, int height, float initial) {
     for (int i = 0; i < width * height; i++){
